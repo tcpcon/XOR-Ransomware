@@ -6,7 +6,7 @@
 
 static long GetFileLength(char* filePath)
 {
-    FILE* f = fopen(filePath, "r");
+    FILE* f = fopen(filePath, "rb");
     if (f == 0) {
         printf("Could not open file for reading [%s].\n", filePath);
     }
